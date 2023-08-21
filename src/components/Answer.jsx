@@ -22,7 +22,7 @@ export const Answer = ({question}) => {
     return (
         <Grid item container xs={10} direction="column" className={classes.container}>
             <Grid item>
-                <img className={classes.answerImg} src={answerUri}/>
+                <img className={classes.answerImg} src={`/content/${answerUri}`}/>
             </Grid>
         </Grid>
     )

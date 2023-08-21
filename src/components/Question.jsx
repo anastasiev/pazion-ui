@@ -23,7 +23,7 @@ export const Question = ({question, checkAnswer}) => {
     return (
         <Grid item container xs={10} direction="column">
             <Grid item>
-                <img className={classes.questionImg} src={`/static${question.question}`}/>
+                <img className={classes.questionImg} src={`/content${question.question}`}/>
             </Grid>
             <Grid item container pl={10} pt={4}>
                 <Paper>
