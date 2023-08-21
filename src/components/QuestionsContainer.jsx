@@ -27,6 +27,7 @@ export const QuestionsContainer = ({questions, chapter, setAnsweredQuestions}) =
             question: q,
             answered: false,
             disabled: true,
+            answer: null,
             index
         }));
         objects[0].disabled = false;
@@ -48,7 +49,8 @@ export const QuestionsContainer = ({questions, chapter, setAnsweredQuestions}) =
                 newQuestionsObjects[currentQuestion.index] = {
                     ...currentQuestion,
                     answered: true,
-                    disabled: false
+                    disabled: false,
+                    answer
                 }
                 if (currentQuestion.index + 1 !== questions.length) {
                     newQuestionsObjects[currentQuestion.index + 1].disabled = false;
